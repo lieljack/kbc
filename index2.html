@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+  <link rel="stylesheet" href="./public/build/tailwind.css">
+  <title>Kristina Business Consult - Home</title>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
+</head>
+
+<body class="antialiased">
+  <section class="relative">
+    <!-- <div class="h-full absolute bg-blue-700 w-1/6 bottom-0 left-0 opacity-30"></div> -->
+    <div class="h-full absolute bottom-0 left-0 opacity-30 z-30">
+      <img src="./public/img/circles.png" alt="">
+    </div>
+
+    <header x-data="dropdown()" class="mt-10">
+      <section>
+        <div class="flex justify-between mx-12">
+          <a href="">
+            <img src="./public/img/kbc-logo.png" alt="Kristina Business Consult Logo" class="h-16">
+          </a>
+          <button x-on:click="show == true" class="cursor-auto">
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+
+        <div x-show="isOpen()" x-on:click.away="close">
+          <ul class="flex font-bold uppercase space-x-10">
+            <li>
+              <a href="./about.html">About Us</a>
+            </li>
+            <li>Our Services</li>
+            <li>Our Team</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </section>
+    </header>
+
+    <section class="block md:flex justify-between items-center relative z-30 py-28 px-12 md:container mx-auto">
+      <div class="lg:w-1/2 pr-24 lg:pr-0">
+        <h1 class="font-extrabold text-5xl md:text-8xl mb-8 -mr-12">Kristina Business Consult</h1>
+        <p class="text-xl mb-16">A global services company that creates solutions and adds value in diverse service
+          sectors through innovation, quality, and cost-effectiveness.</p>
+
+        <a href="" class="bg-kbc-blue px-6 py-3 text-lg font-bold text-white">Get In Touch</a>
+      </div>
+      <div class="md:w-1/2">
+        <img src="./public/img/kbc-logo.png" alt="" class="mx-auto">
+      </div>
+    </section>
+  </section>
+
+  <section class="px-12 md:container mx-auto my-44 block lg:flex justify-between items-center">
+    <div class="w-full lg:w-1/2 block md:flex">
+      <img src="./public/img/james-sullivan-ESZRBtkQ_f8-unsplash.jpg" alt=""
+        class="h-72 w-full md:w-52 rounded-xl shadow-xl">
+      <img src="./public/img/matosem-Nl_FMFpXo2g-unsplash.jpg" alt=""
+        class="h-72 w-full md:w-52  rounded-xl shadow-xl mt-24 ml-0 md:ml-24">
+    </div>
+    <div class="w-full lg:w-1/2 mt-32 md:mt-0">
+      <h2 class="font-bold text-4xl mt-0 md:mt-44 mb-12">Who We Are</h2>
+      <p class="text-xl font-medium leading-relaxed">
+        KRISTINA BUSINESS CONSULT LTD is the destination of choice for Consultancy, Public Relations, Oil and Gas,
+        Construction, Support Services, Labour Supplies, Recruitment/Training, Real Estate, Hospitality, Import and
+        Export, Sales, Marketing, Branding, Media and Publicity, Event Management, and General Services for all classes
+        of clients both individual and corporate.
+      </p>
+    </div>
+  </section>
+
+
+  <section class="bg-special-gray py-44">
+    <section class="container mx-auto mb-24">
+      <h3 class="font-bold text-4xl text-center mb-3">What We Do</h3>
+      <p class="text-center mb-32">We can render services in the following sectors</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-4 bg-white mx-10 p-5 rounded-xl">
+        <!-- Grid 1 -->
+        <div class="px-10 py-16 rounded-xl hover:shadow-2xl hover:bg-kbc-green hover:bg-opacity-30">
+          <div>
+            <div>
+              <img src="./public/img/icons/oil-pump.svg" alt="" class="h-16">
+            </div>
+            <h3 class="font-bold text-xl mt-10">Oil & Gas</h3>
+            <p class="mt-8">
+              Handling of General Contracts, General Supplies, Sales Representatives, Procurement, Import/Export,
+              General
+              Services, General Merchandise, Logistics, Support Services
+            </p>
+          </div>
+        </div>
+        <!-- /Grid 1 -->
+
+        <!-- Grid 2 -->
+        <div class="px-10 py-16 rounded-xl hover:shadow-2xl hover:bg-kbc-blue hover:bg-opacity-30">
+          <div>
+            <div>
+              <img src="./public/img/icons/consultant.svg" alt="" class="h-16">
+            </div>
+            <h3 class="font-bold text-xl mt-10">Consultancy</h3>
+            <p class="mt-8">
+              Business Advisory, Labour Supply, Recruitment, Training, Research, Due Diligence, Event Management,
+              Political Advisory, and General Services
+            </p>
+          </div>
+        </div>
+        <!-- /End Grid 2 -->
+
+        <!-- Grid 3 -->
+        <div class="px-10 py-16 rounded-xl hover:shadow-2xl hover:bg-kbc-red hover:bg-opacity-30">
+          <div>
+            <div>
+              <img src="./public/img/icons/building.svg" alt="" class="h-16">
+            </div>
+            <h3 class="font-bold text-xl mt-10">Real Estate</h3>
+            <p class="mt-8">
+              Real Estate Development, Land Speculation, Property Consultancy, Estate Management, And Land Reclamation
+            </p>
+          </div>
+        </div>
+        <!-- /End Grid 3 -->
+
+        <!-- Grid 4 -->
+        <div class="px-10 py-16 rounded-xl hover:shadow-2xl hover:bg-kbc-yellow hover:bg-opacity-30">
+          <div>
+
+            <div>
+              <img src="./public/img/icons/disinfectant.svg" alt="" class="h-16">
+            </div>
+            <h3 class="font-bold text-xl mt-10">Cleaning Services</h3>
+            <p class="mt-8">
+              Waste Disposal, Environmental Logistics And Control Services, Fumigation, Water Treatment, Pest Control,
+              Cleaning Of Agricultural Waste, etc.
+            </p>
+          </div>
+        </div>
+        <!-- /End Grid 4 -->
+
+        <!-- Grid 5 -->
+        <div class="px-10 py-16 rounded-xl hover:shadow-2xl hover:bg-kbc-red hover:bg-opacity-30">
+          <div>
+
+            <div>
+              <img src="./public/img/icons/like.svg" alt="" class="h-16">
+            </div>
+            <h3 class="font-bold text-xl mt-10">Media & Publicity</h3>
+            <p class="mt-8">
+              Media and Publicity, Advertising, Marketing, Promotions, Printing, Branding, Designs, Events Coverage,
+              Corporate Image Management, Packaging, Media Advisory, and Archiving
+            </p>
+          </div>
+        </div>
+        <!-- /End Grid 5 -->
+
+        <!-- Grid 5 -->
+        <div class="px-10 py-16 rounded-xl hover:shadow-2xl hover:bg-kbc-green hover:bg-opacity-30">
+          <div>
+
+            <div>
+              <img src="./public/img/icons/food-serving.svg" alt="" class="h-16">
+            </div>
+            <h3 class="font-bold text-xl mt-10">Hospitality</h3>
+            <p class="mt-8">
+              Lodging, Food and Drinks, Chauffeur Services, Theme Parks, Event Hosting, Travel Advisory, Journey
+              Management, and Tourism Services.
+            </p>
+          </div>
+        </div>
+        <!-- /End Grid 5 -->
+
+        <!-- Grid 6 -->
+        <div class="px-10 py-16 rounded-xl hover:shadow-2xl hover:bg-kbc-yellow hover:bg-opacity-30">
+          <div>
+
+            <div>
+              <img src="./public/img/icons/hook.svg" alt="" class="h-16">
+            </div>
+            <h3 class="font-bold text-xl mt-10">Construction</h3>
+            <p class="mt-8">
+              Sand Filling, Shore Protection, Land Reclamation, Bush Clearing, Construction of Civil Works, Roads,
+              Bridges, Buildings, Office Complex, etc.
+            </p>
+          </div>
+        </div>
+        <!-- /End Grid 6 -->
+
+        <!-- Grid 7 -->
+        <div class="px-10 py-16 rounded-xl hover:shadow-2xl hover:bg-kbc-blue hover:bg-opacity-30">
+          <div>
+
+            <div>
+              <img src="./public/img/icons/supply-chain.svg" alt="" class="h-16">
+            </div>
+            <h3 class="font-bold text-xl mt-10">Sales & Supplies</h3>
+            <p class="mt-8">
+              General Supplies, Procurement, Import/Export, General Merchandise, Logistics, Support Services,
+              Agro-Allied
+              Services, Chemical Supplies, etc
+            </p>
+          </div>
+        </div>
+        <!-- /End Grid 7 -->
+      </div>
+    </section>
+  </section>
+
+  <section class="relative px-2 md:px-32 py-56">
+    <!-- <div class="absolute top-0 left-0 h-full">
+      <div class="h-1/5 w-3 bg-kbc-blue"></div>
+      <div class="h-1/5 w-3 bg-kbc-green"></div>
+      <div class="h-1/5 w-3 bg-black"></div>
+      <div class="h-1/5 w-3 bg-kbc-red"></div>
+      <div class="h-1/5 w-3 bg-kbc-yellow"></div>
+    </div> -->
+    <div class="absolute">
+      <img src="./public/img/arcs.png" alt="" class="h-24 md:h-44">
+    </div>
+    <div class="absolute top-12">
+      <img src="./public/img/sublogo – 1.png" alt="" class="h-16 md:h-32 m-auto">
+    </div>
+    <div class="absolute top-3 md:top-20 right-12">
+      <img src="./public/img/sublogo – 2.png" alt="" class="h-16 md:h-32 m-auto">
+    </div>
+    <div class="absolute left-0 right-0 -bottom-0 md:-bottom-20">
+      <img src="./public/img/sublogo.png" alt="" class="h-16 md:h-32 m-auto">
+    </div>
+
+    <div class="mx-auto text-center">
+      <div
+        class="mb-12 bg-clip-text text-center text-transparent bg-gradient-to-r from-yellow-600 via-red-500 to-kbc-red text-4xl md:text-7xl font-black">
+        Our Subsidiaries
+      </div>
+      <a href="" class="bg-kbc-green px-12 py-4 text-white font-bold text-smmd:text-lg">View Subsidiaries</a>
+    </div>
+  </section>
+
+  <section class="block lg:flex items-center bg-special-black text-white">
+    <div class="w-full lg:w-2/3 p-24 relative">
+      <div class="absolute top-0 right-0">
+        <img src="./public/img/circles – 1.png" alt="" class="opacity-10">
+      </div>
+      <h3 class="text-4xl font-bold text-center">Vision & Mission</h3>
+      <p class="text-xl leading-snug mt-16">
+        We aim to be a global services company that bridges the need gaps, creating solutions and adding value in
+        diverse service sectors through innovation, quality, cost-effectiveness, and client needs assessment in line
+        with modern business trends.
+      </p>
+      <p class="text-xl leading-snug mt-5">
+        To provide topnotch and quality assured services by deliberate application of:
+      </p>
+      <div class="mt-6">
+        <ul class="list-inside bg-rose-200 text-xl space-y-3">
+          <li>1. The highest safety standards, integrity, professionalism and ethical values.</li>
+          <li>2. Timely response to clients' needs and prioritizing clients' interest.</li>
+          <li>3. A win-win template in our business environment that captures employees and clients interests.</li>
+          <li>4. Teamwork and openness to business transactions and promoting a functional reward system for staff
+            commitment, innovation and extra input.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="w-full lg:w-1/3 h-full">
+      <img src="./public/img/matosem-Nl_FMFpXo2g-unsplash.jpg" alt="">
+    </div>
+  </section>
+
+  <section class="my-52">
+    <div class="text-center">
+      <h3 class="text-6xl font-bold">Get in touch with us</h3>
+      <p class="text-xl mt-3">We will be glad to work with you</p>
+      <div class="flex items-center justify-center mt-8">
+        <img src="./public/img/email.svg" alt="" width="35">
+        <p class="underline ml-4 font-medium text-xl">kristinabusinessconsult@gmail.com</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-black flex px-12 py-6 text-white justify-between">
+    <p>(C) Kristina Business Consult</p>
+    <div>
+      <ul class="flex space-x-10">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Our Services</li>
+        <li>Our Team</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    function dropdown() {
+        return {
+            show: false,
+            open() {
+              console.info("Hello") 
+              this.show = true 
+            },
+            close() { this.show = false },
+            isOpen() { return this.show === true },
+        }
+    }
+</script>
+</body>
+
+</html>

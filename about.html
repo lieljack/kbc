@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+  <link rel="stylesheet" href="./public/build/tailwind.css">
+  <link rel="stylesheet" href="./public/build/style.css">
+  <title>Kristina Business Consult | About</title>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
+</head>
+
+<body>
+  <div class="bg-about bg-cover bg-center bg-blend-overlay bg-black bg-opacity-30">
+
+    <div class="p-4" x-data="{navigationOpen: false}">
+      <div class="rounded-full  overflow-hidden flex justify-between items-center text-white px-6 container mx-auto">
+        <div class="flex items-center h-16 relative">
+          <img src="./public/img/kbc-logo.png" alt="KBC Logo" class="h-12">
+        </div>
+        <div class="flex justify-end items-center">
+          <div
+            class="flex mt-4 lg:mt-0 items-center lg:block py-16 scal lg:py-0 fixed lg:static w-2/3 lg:w-auto left-0 top-0 bottom-0 overflow-x-auto  bg-gray-700 lg:bg-transparent z-30 transform transition-all duration-300 origin-top-left lg:origin-right"
+            @click.away="navigationOpen = false" x-show="navigationOpen"
+            x-transition:enter-start="opacity-0 lg:scale-75" x-transition:enter-end="opacity-100 lg:scale-100"
+            x-transition:leave-start="opacity-100 lg:scale-100" x-transition:leave-end="opacity-0 lg:scale-75">
+            <ul class="flex text-white text-lg lg:text-sm flex-wrap items-center max-h-full overflow-auto">
+              <li class="lg:mx-2 w-full lg:w-auto shadow lg:shadow-none">
+                <a href="./" class="p-4 block hover:text-red-500">Home</a>
+              </li>
+              <li class="lg:mx-2 w-full lg:w-auto shadow lg:shadow-none">
+                <a href="./about.html" class="p-4 block hover:text-red-500">About us</a>
+              </li>
+              <li class="lg:mx-2 w-full lg:w-auto shadow lg:shadow-none">
+                <a href="./contact.html" class="p-4 block hover:text-red-500">Contact</a>
+              </li>
+              <li class="lg:mx-2 w-full lg:w-auto shadow lg:shadow-none">
+                <a href="./subsidiaries.html" class="p-4 block hover:text-red-500">Subsidiaries</a>
+              </li>
+            </ul>
+
+          </div>
+          <button class="flex justify-center flex-col w-6 h-8 space-y-1 flex-wrap focus:outline-none"
+            @click="navigationOpen = !navigationOpen">
+            <span class="h-1 w-6 bg-white rounded" x-show.transition="!navigationOpen"></span>
+            <span class="h-1 w-6 bg-white rounded"></span>
+            <span class="h-1 w-6 bg-white rounded" x-show.transition="!navigationOpen"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <section class="relative pt-32 pb-48">
+      <div class="bg-about-hero bg-clip-text bg-center relative self-center w-auto h-full">
+        <h1 class="text-7xl md:text-9xl font-extrabold text-transparent text-center">About Us</h1>
+      </div>
+    </section>
+  </div>
+
+  <section class="bg-special-black px-24 py-32 md:px-64 md:py-64 relative overflow-hidden">
+    <div class="absolute top-0 left-0">
+      <h1 class="text-7xl md:text-9xl font-extrabold text-white opacity-20">01.</h1>
+    </div>
+    <div class="absolute bottom-0 right-0">
+      <h1 class="text-6xl md:text-9xl font-extrabold text-white opacity-20">Introduction</h1>
+    </div>
+    <p class="text-lg md:text-3xl leading-relaxed text-white text-center">
+      Kristina Business Consult LTD specializes in the delivery of prompt, quality and client-tailored products and
+      services to meet the business needs of our clients. We achieve set targets and customer satisfaction in a
+      transparent and efficient way through effective utilization of human and material resources, cutting edge
+      technology and in line with global best practices.
+    </p>
+  </section>
+
+  <section class="my-44 relative">
+    <div class="absolute -bottom-28 md:bottom-0 right-0">
+      <h2 class="text-9xl text-gray-200 font-bold">Vision</h2>
+    </div>
+    <div class="container mx-auto block md:flex items-center">
+      <div class="flex w-2/3 items-center justify-center mx-auto md:w-1/2">
+        <!-- <img src="./public/img/tuesday-temptation-WFe96xvzmI8-unsplash.jpg" alt="" class="h-80 rounded-3xl"> -->
+        <img src="./public/img/oil and gas.jpg" alt=""
+          class="top-20 shadow-none md:shadow-lg -right-24 rounded-3xl">
+      </div>
+      <div class="w-full md:w-1/2 relative h-full mt-24 md:mt-0">
+        <p class="text-lg md:text-3xl px-24 leading-relaxed">
+          To be a global services company that bridges the need gaps, creating solutions and adding value in diverse
+          service sectors through innovation, quality, cost-effectiveness, and client needs assessment in line with
+          modern business trends.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-24 relative overflow-hidden bg-special-black text-white flex ">
+    <div class="text-lg md:text-3xl px-24 py-44">
+      <p class="mb-8">To provide topnotch and quality assured services by deliberate application of:</p>
+      <ul class="list-disc grid grid-cols-1 md:grid-cols-2 gap-5 ml-3">
+        <li class="p-3">The highest safety standards, integrity, professionalism and ethical values</li>
+        <li class="p-3">
+          Timely response to clients' needs and prioritizing clients' interest.
+        </li>
+        <li class="p-3">
+          A win-win template in our business environment that captures employees and clients interests.
+        </li>
+        <li class="p-3">
+          Teamwork and openness to business transactions and promoting a functional reward system for staff commitment,
+          innovation and extra input.
+        </li>
+      </ul>
+    </div>
+
+    <div class="absolute right-0 bottom-0">
+      <div class="flex flex-wrap">
+        <div class="w-full">
+          <h1 class="font-bold text-9xl opacity-10">Mision</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-black flex px-12 py-6 text-white justify-between">
+    <div>
+      <p>(C) Kristina Business Consult</p>
+    </div>
+    <!-- <div>
+      <ul class="flex space-x-10">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Our Services</li>
+        <li>Our Team</li>
+        <li>Contact</li>
+      </ul>
+    </div> -->
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+
+</body>
+
+</html>

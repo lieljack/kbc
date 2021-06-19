@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+  <link rel="stylesheet" href="./public/build/tailwind.css">
+  <title>Kristina Business Consult | Subsidiaries</title>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
+</head>
+
+<body>
+  <section class="bg-subsidiary-hero  bg-cover h-auto lg:min-h-screen bg-blend-overlay bg-black bg-opacity-40">
+    <div>
+      <div class="p-4" x-data="{navigationOpen: false}">
+        <div class="rounded-full  overflow-hidden flex justify-between items-center text-white px-6 container mx-auto">
+          <div class="flex items-center h-16 relative">
+            <img src="./public/img/kbc-logo.png" alt="KBC Logo" class="h-12">
+          </div>
+          <div class="flex justify-end items-center">
+            <div
+              class="flex mt-4 lg:mt-0 items-center lg:block py-16 scal lg:py-0 fixed lg:static w-2/3 lg:w-auto left-0 top-0 bottom-0 overflow-x-auto  bg-gray-700 lg:bg-transparent z-30 transform transition-all duration-300 origin-top-left lg:origin-right"
+              @click.away="navigationOpen = false" x-show="navigationOpen"
+              x-transition:enter-start="opacity-0 lg:scale-75" x-transition:enter-end="opacity-100 lg:scale-100"
+              x-transition:leave-start="opacity-100 lg:scale-100" x-transition:leave-end="opacity-0 lg:scale-75">
+              <ul class="flex text-white text-lg lg:text-sm flex-wrap items-center max-h-full overflow-auto">
+                <li class="lg:mx-2 w-full lg:w-auto shadow lg:shadow-none">
+                  <a href="./" class="p-4 block hover:text-red-500">Home</a>
+                </li>
+                <li class="lg:mx-2 w-full lg:w-auto shadow lg:shadow-none">
+                  <a href="./about.html" class="p-4 block hover:text-red-500">About us</a>
+                </li>
+                <li class="lg:mx-2 w-full lg:w-auto shadow lg:shadow-none">
+                  <a href="./contact.html" class="p-4 block hover:text-red-500">Contact</a>
+                </li>
+                <li class="lg:mx-2 w-full lg:w-auto shadow lg:shadow-none">
+                  <a href="./subsidiaries.html" class="p-4 block hover:text-red-500">Subsidiaries</a>
+                </li>
+              </ul>
+
+            </div>
+            <button class="flex justify-center flex-col w-6 h-8 space-y-1 flex-wrap focus:outline-none"
+              @click="navigationOpen = !navigationOpen">
+              <span class="h-1 w-6 bg-white rounded" x-show.transition="!navigationOpen"></span>
+              <span class="h-1 w-6 bg-white rounded"></span>
+              <span class="h-1 w-6 bg-white rounded" x-show.transition="!navigationOpen"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <section
+        class="flex justify-between items-center z-10 py-24  md:container mx-auto lg:mt-32">
+        <div class="w-full lg:pr-0 text-center px-6">
+          <p class="text-5xl md:text-8xl font-extrabold mb-8 uppercase text-gray-50">Our Subsidiaries</p>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section class="container mx-auto my-24">
+    <div class="block lg:flex items-center">
+      <div class="w-full lg:w-1/3">
+        <img src="./public/img/rsz_kristina.png" alt="" class="h-44 w-auto mx-auto">
+      </div>
+      <div class="p-8 w-full lg:w-2/3">
+        <p class="text-justify text-lg mb-6">
+          <span class="font-extrabold text-2xl text-kbc-green">Kristina Reports</span> 
+          is an online media outfit based in Bonny Island, Rivers State, Nigeria with a global reach has become a platform of choice for information dissemination, events trending, marketing and promotions. We enhance leverage for our clients by creating access to timely, relevant and strategic information about investment opportunities and the needed media visibility for them via diverse channels thus giving them a heads up in an intensely competitive business environment. 
+        </p>
+        <div class="w-max">
+          <a href="https://kristinareports.com" target="_blank" rel="noopener noreferrer" class="flex bg-special-gray px-4 py-2 rounded-full text-sm font-medium items-center hover:shadow-lg hover:bg-kbc-blue hover:text-white">
+            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            Visit website
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="block lg:flex items-center mt-44">
+      <div class="w-full lg:w-1/3">
+        <img src="./public/img/aniie.png" alt="" class="h-44 w-auto mx-auto">
+      </div>
+      <div class="p-8 w-full lg:w-2/3">
+        <p class="text-justify text-lg mb-6">
+          <span class="font-extrabold text-2xl text-yellow-600">Annie's Collection</span> 
+          is a shopping centre cum boutique for quality, stylish and trendy clothing and accessories at affordable costs. These include unisex clothing, footwear, belts, ladies' handbags, watches, perfumes, etc. It is located in Bonny, Rivers State, Nigeria.  
+        </p>
+        <!-- <div class="w-max">
+          <a href="https://kristinareports.com" target="_blank" rel="noopener noreferrer" class="flex bg-special-gray px-4 py-2 rounded-full text-sm font-medium items-center hover:shadow-lg hover:bg-kbc-blue hover:text-white">
+            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            Visit website
+          </a>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="block lg:flex items-center mt-44">
+      <div class="w-full lg:w-1/3">
+        <img src="./public/img/ss.png" alt="" class="h-44 w-auto mx-auto">
+      </div>
+      <div class="p-8 w-full lg:w-2/3">
+        <p class="text-justify text-lg mb-6">
+          <span class="font-extrabold text-2xl text-kbc-blue">Shalom Shelters</span> 
+          is our portfolio manager for everything real estate including housing development, sourcing for shelters for diverse classes of clients on ownership, rentals and leasing, and consultancy services in diverse areas of the real estate ecosystem. We are at 75 King Perekule Road, Bonny and optimistic of working with you to realize your housing needs.
+        </p>
+        <!-- <div class="w-max">
+          <a href="https://kristinareports.com" target="_blank" rel="noopener noreferrer" class="flex bg-special-gray px-4 py-2 rounded-full text-sm font-medium items-center hover:shadow-lg hover:bg-kbc-blue hover:text-white">
+            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            Visit website
+          </a>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="block lg:flex items-center mt-44">
+      <div class="w-full lg:w-1/3">
+        <img src="./public/img/Image.png" alt="" class="h-44 w-auto mx-auto">
+      </div>
+      <div class="p-8 w-full lg:w-2/3">
+        <p class="text-justify text-lg mb-6">
+          <span class="font-extrabold text-2xl text-kbc-red">Annie's Food Mart</span> 
+          is your best spot for all things food, frozen foods, fish, chickens, gizzard, goat meat, beef, staple foods such as yam, rice, beans, garri, cereals, drinks, fresh eggs, etc. ANNIE'S FOOD MART is a food stall located at Akiama, Bonny, Rivers State, Nigeria and open all day to satisfy her customers' everyday home needs. 
+        </p>
+        <!-- <div class="w-max">
+          <a href="https://kristinareports.com" target="_blank" rel="noopener noreferrer" class="flex bg-special-gray px-4 py-2 rounded-full text-sm font-medium items-center hover:shadow-lg hover:bg-kbc-blue hover:text-white">
+            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            Visit website
+          </a>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-black flex px-12 py-6 text-white justify-between">
+    <div>
+      <p>(C) Kristina Business Consult</p>
+    </div>
+    <!-- <div>
+      <ul class="flex space-x-10">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Our Services</li>
+        <li>Our Team</li>
+        <li>Contact</li>
+      </ul>
+    </div> -->
+  </footer>
+
+
+  <script>
+    function dropdown() {
+      return {
+        show: false,
+        open() {
+          console.info("Hello")
+          this.show = true
+        },
+        close() { this.show = false },
+        isOpen() { return this.show === true },
+      }
+    }
+  </script>
+</body>
+
+</html>
